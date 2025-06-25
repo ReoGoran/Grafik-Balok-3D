@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Grafik Sederhana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>3D Grafik Sederhana</h1>
+        
+        <div class="canvas-container">
+            <div class="canvas-wrapper">
+                <h3>PART 1: Wireframe Model</h3>
+                <canvas id="canvas1" width="400" height="400"></canvas>
+                <div class="rotation-info">
+                    <div>Rotasi X: <span id="rotX1">0</span>°</div>
+                    <div>Rotasi Y: <span id="rotY1">0</span>°</div>
+                </div>
+            </div>
+            
+            <div class="canvas-wrapper">
+                <h3>PART 2: Hidden Line Removal</h3>
+                <canvas id="canvas2" width="400" height="400"></canvas>
+                <div class="rotation-info">
+                    <div>Rotasi X: <span id="rotX2">0</span>°</div>
+                    <div>Rotasi Y: <span id="rotY2">0</span>°</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <span class="control-key">W</span> Rotasi X ke depan
+                <span class="control-key">S</span> Rotasi X ke belakang
+            </div>
+            <div class="control-group">
+                <span class="control-key">A</span> Rotasi Y ke kiri
+                <span class="control-key">D</span> Rotasi Y ke kanan
+            </div>
+        </div>
+
+        <div class="info">
+            <strong>Objek:</strong> Kotak 3D dengan dimensi 200×150×100<br>
+            <strong>Sudut Pandang:</strong> Depan atas sedikit kanan<br>
+            <strong>Kontrol:</strong> Gunakan keyboard WASD untuk rotasi
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
